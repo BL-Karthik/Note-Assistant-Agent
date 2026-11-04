@@ -1,0 +1,34 @@
+# Python virtual environments
+.venv/
+venv/
+backend/.venv/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# ChromaDB
+backend/data/chroma_db/
+data/chroma_db/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# Vercel
+.vercel/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
