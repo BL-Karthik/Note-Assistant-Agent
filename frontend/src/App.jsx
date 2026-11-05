@@ -1,6 +1,6 @@
 
 import "./App.css";
-import ChatBox from "./components/chatbox";
+import ChatBox from "./components/ChatBox";
 function App() {
   return (
     <div className="app">
