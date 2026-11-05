@@ -1,13 +1,13 @@
 import os
 from  dotenv import load_dotenv
 from google import genai
-from backend.model.note_summary import NoteSummary
-from backend.model.note_content import NoteContent
-from backend.prompts.prompt import NOTE_EXTRACTION_PROMPT 
-from backend.prompts.retrival_prompt import RETRIVAL_EXTRACTION_PROMPT
-from backend.service.date_service import extract_meeting_date
-from backend.service.note_id_service import generate_note_id
-from backend.model.note_response import NoteResponse
+from model.note_summary import NoteSummary
+from model.note_content import NoteContent
+from prompts.prompt import NOTE_EXTRACTION_PROMPT 
+from prompts.retrival_prompt import RETRIVAL_EXTRACTION_PROMPT
+from service.date_service import extract_meeting_date
+from service.note_id_service import generate_note_id
+from model.note_response import NoteResponse
 from datetime import date
 from pathlib import Path
 

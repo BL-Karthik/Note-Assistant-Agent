@@ -6,3 +6,4 @@ chromadb
 dateparser
 langchain-text-splitters
 pydantic
+qdrant-client

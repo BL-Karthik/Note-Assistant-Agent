@@ -1,11 +1,11 @@
 from fastapi import FastAPI
-from backend.model.indent_request import IndentRequest
-from backend.classifier.indent_classifier import classify_intent
-from backend.service.summarizer import process_messege
-from backend.service.date_service import extract_meeting_date
+from model.indent_request import IndentRequest
+from classifier.indent_classifier import classify_intent
+from service.summarizer import process_messege
+from service.date_service import extract_meeting_date
 from fastapi.middleware.cors import CORSMiddleware
-from backend.service.chroma_service import store_chunks_in_chroma ,retrieve_chunks_from_chroma
-from backend.config.chroma_config import client
+from service.chroma_service import store_chunks_in_chroma ,retrieve_chunks_from_chroma
+from config.chroma_config import client
 from uuid import uuid4
 from pathlib import Path
 

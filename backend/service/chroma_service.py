@@ -1,11 +1,11 @@
 
-from backend.config.chroma_config import client
-from backend.model.note_summary import NoteSummary
-from backend.service.chunking_Service import split_into_chunks
-from backend.model.note_response import NoteResponse
-from backend.service.summarizer import process_retrival_messege
+from config.chroma_config import client
+from model.note_summary import NoteSummary
+from service.chunking_Service import split_into_chunks
+from model.note_response import NoteResponse
+from service.summarizer import process_retrival_messege
 from dateparser.search import search_dates
-from backend.classifier.indent_classifier import detect_intent
+from classifier.indent_classifier import detect_intent
 
 
 def store_chunks_in_chroma(note_summary: NoteSummary):

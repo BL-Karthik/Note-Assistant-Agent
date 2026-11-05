@@ -1,5 +1,5 @@
 const API_URL = import.meta.env.PROD
-  ? ""
+  ? "/api"
   : "http://127.0.0.1:8000";
 
 export async function sendMessageToBackend(message) {
@@ -23,7 +23,6 @@ export async function sendMessageToBackend(message) {
     }
 
     return data;
-
   } catch (error) {
     console.error("Chat API Error:", error);
     throw error;
